@@ -1,0 +1,5 @@
+SELECT COUNT(*)
+FROM person
+WHERE height IS NULL
+
+/*RESULT: 47315*/
