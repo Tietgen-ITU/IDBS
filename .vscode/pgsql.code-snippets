@@ -80,5 +80,30 @@
 			"\t$2",
 			"END IF"
 		]
+	},
+	"Procedure":{
+		"scope": "sql",
+		"prefix": "pgProcedure",
+		"body": [
+			"CREATE PROCEDURE ${1:Name}(${2:Parameter} IN ${3:DataType})",
+			"LANGUAGE plpgsql",
+			"AS $$",
+			"DECLARE",
+			"-- Variable declaration",
+			"${4:Name} ${5:DataType} := ${6:Value};",
+			"BEGIN",
+			"-- Stored procedure body",
+			"${7:Code}",
+			"END; $$"
+		]
+	},
+	"Transaction":{
+		"scope": "sql",
+		"prefix": "pgTransaction",
+		"body": [
+		"BEGIN TRANSACTION;",
+		"\t${1:Code}",
+		"COMMIT;"
+		]
 	}
 }
