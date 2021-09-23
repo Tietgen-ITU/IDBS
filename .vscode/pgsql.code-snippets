@@ -105,5 +105,28 @@
 		"\t${1:Code}",
 		"COMMIT;"
 		]
+	},
+	"Function":{
+		"scope": "sql",
+		"prefix": "pgFunction",
+		"body": [
+			"DROP FUNCTION IF EXISTS ${1:Name}(${2:Parameter} IN ${3:DataType});",
+			"",
+			"CREATE FUNCTION ${1:Name}(${2:Parameter} IN ${3:DataType})",
+			"RETURNS ${4:ReturnType}",
+			"AS $$ BEGIN",
+			"\t${5:code}",
+			"END; $$ LANGUAGE plpgsql;"
+		]
+	},
+	"Insert": {
+		"scope": "sql",
+		"prefix": "pgInsert",
+		"body": [
+			"INSERT INTO ${1:TableName} (${2:Columns})",
+    		"VALUES (${3:Values}),",
+            "(${4:Values again?});"
+		],
+		"description": "Insert into query"
 	}
 }
