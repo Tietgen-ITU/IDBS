@@ -7,3 +7,6 @@ SELECT COUNT(*)
 FROM (SELECT E.countryCode, E.empire
 FROM empires E
 WHERE E.empire = 'Danish Empire') R;
+
+
+-- Answer 3
