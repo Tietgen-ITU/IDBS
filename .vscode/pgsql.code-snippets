@@ -35,6 +35,19 @@
 		],
 		"description": "Creates the essential for a postgres trigger with trigger function"
 	},
+	"Table":{
+		"scope": "sql",
+		"prefix": "pgTable",
+		"body": [
+			"DROP TABLE IF EXISTS ${1:Name};",
+			"CREATE TABLE ${1:Name} (",
+			"\tPID INT NOT NULL,",
+			"\t${0}",
+			"\tPRIMARY KEY (PID)",
+	 		");"
+		],
+		"description": "Creates a table"
+	},
 	"View":{
 		"scope": "sql",
 		"prefix": "pgView",
