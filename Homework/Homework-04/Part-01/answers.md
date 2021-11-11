@@ -21,3 +21,20 @@ the CAP theorem is wrong.
 ## **Question 1.B** Reflect upon why ACID transactions are rarely used in distributed systems.
 
 > **Answer:** The ACID properties of a distributed system is not easy to implement without loosing performance.
+
+## **Question 2.A** Select the correct statements below:
+- (a) Today's key-value stores implement all the functionality required to support *all*
+needs of analytics applications.
+- (b) In big data, velocity means that it is necessary to react quickly to the large amounts
+of data being added to the system.
+- (c) The information that multimedia content (image, video and audio content) is inherently very unstructured in nature.
+- (d) Big data analytics applications cannot be implemented on any system unless that
+systems supports ACID transactions.
+
+## **Question 2.B** 
+Consider a scenario where you have 1PB of raw data les that have just
+been produced as a result of a scientic experiment. You are trying to make scientic discoveries using this data, using complex computations, and also determine the experiments
+you would like to perform in the future. You have a cluster of machines in your lab (100ish
+nodes), which have 128GB main-memory and 16 cores each. Explain (with convincing
+arguments) what type of data management/processing system you would you pick for this
+scenario.
