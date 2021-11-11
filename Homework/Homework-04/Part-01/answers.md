@@ -20,4 +20,4 @@ the CAP theorem is wrong.
 
 ## **Question 1.B** Reflect upon why ACID transactions are rarely used in distributed systems.
 
-The ACID properties of a distributed system is not easy to implement without loosing performance.
+> **Answer:** The ACID properties of a distributed system is not easy to implement without loosing performance.
