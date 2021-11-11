@@ -25,3 +25,25 @@ CREATE TABLE Projects (
        PRIMARY KEY (ID, PID, SID)
 );
 ```
+
+### Detected Functional Dependencies
+ID --> MID
+
+~~ID --> MN~~ *(This is not necessary. because of FD:**** ID --> MID --> MN)*
+
+PID --> PN
+
+SID --> SN
+
+SN --> SID
+
+MID --> MN
+
+MN --> MID
+
+
+## Relation
+Projects(ID, PID, SID, SN, PN, MID, MN)
+
+> Answer: 
+> 
