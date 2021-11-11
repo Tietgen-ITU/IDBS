@@ -29,7 +29,7 @@ CREATE TABLE Projects (
 ### Detected Functional Dependencies
 ID --> MID
 
-~~ID --> MN~~ *(This is not necessary. because of FD:**** ID --> MID --> MN)*
+~~ID --> MN~~ *(This is not necessary. because of FD: ID --> MID --> MN)
 
 PID --> PN
 
@@ -45,5 +45,16 @@ MN --> MID
 ## Relation
 Projects(ID, PID, SID, SN, PN, MID, MN)
 
+Keys: ID, PID, SID
+
 > Answer: 
 > 
+> (ID, PID, SID) BCNF
+> 
+> (ID, MID) BCNF
+> 
+> (MID, MN) 3 NF da MN går tilbage til MID
+> 
+> (PID, PN) BCNF
+> 
+> (SID, SN) 3 NF
