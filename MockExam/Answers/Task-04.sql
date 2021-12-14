@@ -6,7 +6,7 @@ GROUP BY d_id
 ORDER BY AVG(g_price) DESC
 LIMIT 1;
 
--- How it should have been done
+-- How it should have been done (However the answer is correct)
 
 DROP VIEW IF EXISTS AverageGarmentPrice;
 CREATE VIEW AverageGarmentPrice AS
