@@ -62,6 +62,11 @@ CREATE TABLE ConferenceArticle (
     PRIMARY KEY (AID)
 );
 
+-- This is an error the Staff Id should have been assigned to a manages on the Journal Article so 
+-- that we could keep the one to many relation. Therefore the manages relation / table 
+-- should be deleted. 
+
+
 CREATE TABLE Manages (
     SID INT NOT NULL REFERENCES Staff(SID),
     AID INT NOT NULL REFERENCES JournalArticle(AID),
